@@ -87,3 +87,28 @@ var User1 = new Usuario('email@teste.com', 'senha123');
 var Adm1 = new Admin('email@teste.com', 'senha123');
 console.log(User1.isAdmin());
 console.log(Adm1.isAdmin());
+var usuarios = [{
+  nome: 'Alexandre',
+  idade: 36,
+  empresa: 'DreamMaker'
+}, {
+  nome: 'Rafael',
+  idade: 16,
+  empresa: 'DreamMaker'
+}, {
+  nome: 'Victoria',
+  idade: 11,
+  empresa: 'DreamMaker'
+}];
+var idade = usuarios.map(function (item) {
+  return item.idade;
+});
+console.log(idade);
+var trabalhaEMaiorQue18 = usuarios.filter(function (item) {
+  return item.idade > 18 && item.empresa === 'DreamMaker';
+});
+console.log(trabalhaEMaiorQue18);
+var encontraGoogle = usuarios.find(function (item) {
+  return item === 'Google';
+});
+console.log(encontraGoogle);
