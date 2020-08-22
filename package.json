@@ -5,6 +5,12 @@
     "@babel/preset-env": "^7.11.0"
   },
   "scripts": {
-    "dev":"babel  ./main.js -o ./bundle.js"
-  }
+    "dev": "babel  ./main.js -o ./bundle.js -w"
+  },
+  "name": "es6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/developeralexandresantos/es6.git",
+  "author": "Titio-Lele <gp-alexandresantos@uol.com.br>",
+  "license": "MIT"
 }
