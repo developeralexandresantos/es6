@@ -1,11 +1,20 @@
 "use strict";
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 0e8b4698261bdb8c9b0867054e22ae446a08abb3
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 4678b155ddce36196ef0bdfc5a6ab80f8a02fda7
+>>>>>>> 0e8b4698261bdb8c9b0867054e22ae446a08abb3
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
@@ -28,6 +37,8 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
+<<<<<<< HEAD
+=======
 var TodoList = /*#__PURE__*/function () {
   function TodoList() {
     _classCallCheck(this, TodoList);
@@ -52,6 +63,7 @@ document.getElementById('novotodo').onclick = function () {
   MinhaLista.addTodo();
 };
 
+>>>>>>> 4678b155ddce36196ef0bdfc5a6ab80f8a02fda7
 var Usuario = /*#__PURE__*/function () {
   function Usuario(email, senha) {
     _classCallCheck(this, Usuario);
@@ -64,13 +76,22 @@ var Usuario = /*#__PURE__*/function () {
   _createClass(Usuario, [{
     key: "isAdmin",
     value: function isAdmin() {
+<<<<<<< HEAD
+      return "".concat(this.admin);
+=======
       return this.admin;
+>>>>>>> 4678b155ddce36196ef0bdfc5a6ab80f8a02fda7
     }
   }]);
 
   return Usuario;
 }();
 
+<<<<<<< HEAD
+;
+
+=======
+>>>>>>> 4678b155ddce36196ef0bdfc5a6ab80f8a02fda7
 var Admin = /*#__PURE__*/function (_Usuario) {
   _inherits(Admin, _Usuario);
 
@@ -82,6 +103,11 @@ var Admin = /*#__PURE__*/function (_Usuario) {
     _classCallCheck(this, Admin);
 
     _this = _super.call(this);
+<<<<<<< HEAD
+    _this.email = email;
+    _this.senha = senha;
+=======
+>>>>>>> 4678b155ddce36196ef0bdfc5a6ab80f8a02fda7
     _this.admin = true;
     return _this;
   }
@@ -89,10 +115,54 @@ var Admin = /*#__PURE__*/function (_Usuario) {
   return Admin;
 }(Usuario);
 
+<<<<<<< HEAD
+;
+var User1 = new Usuario('email@teste.com', 'senha123');
+var Admin1 = new Admin('email@teste.com', 'senha123');
+console.log(User1.isAdmin());
+console.log(Admin1.isAdmin());
+var usuario = [{
+  nome: 'Diego',
+  idade: 23,
+  empresa: 'Rocketseat'
+}, {
+  nome: 'Gabriel',
+  idade: 15,
+  empresa: 'Rocketseat'
+}, {
+  nome: 'Lucas',
+  idade: 30,
+  empresa: 'Facebook'
+}];
+var idades = usuario.map(function (item) {
+  return item.idade;
+});
+console.log(idades);
+var filter = usuario.filter(function (item) {
+  return item.idade > 18 && item.empresa === 'Rocketseat';
+});
+console.log(filter);
+var find = usuario.find(function (item) {
+  return item.empresa === 'Google';
+});
+console.log(find);
+var novoUsuario = usuario.map(function (item) {
+  var teste = _objectSpread(_objectSpread({}, item), {}, {
+    idade: item.idade * 2
+  });
+
+  return teste;
+});
+var filtrado = novoUsuario.filter(function (item) {
+  return item.idade < 50;
+});
+console.log(filtrado);
+=======
 var User1 = new Usuario('email@teste.com', 'senha123');
 var Adm1 = new Admin('email@teste.com', 'senha123');
 console.log(User1.isAdmin());
 console.log(Adm1.isAdmin());
+<<<<<<< HEAD
 var usuarios = [{
   nome: 'Alexandre',
   idade: 36,
@@ -134,3 +204,6 @@ var arr = [1, 2, 3, 4, 5];
 console.log(arr.map(function (item) {
   return item + 10;
 }));
+=======
+>>>>>>> 4678b155ddce36196ef0bdfc5a6ab80f8a02fda7
+>>>>>>> 0e8b4698261bdb8c9b0867054e22ae446a08abb3

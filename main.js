@@ -12,8 +12,8 @@ class TodoList {
 const MinhaLista = new TodoList();
 
 document.getElementById('novotodo').onclick = function () {
-    MinhaLista.addTodo(); 
-}
+    MinhaLista.addTodo();
+};
 
 class Usuario {
     constructor(email, senha) {
@@ -23,28 +23,30 @@ class Usuario {
     }
 
     isAdmin() {
-        return this.admin;
+        return `${this.admin}`;
     }
-}
+};
 
-class Admin extends Usuario{
+class Admin extends Usuario {
     constructor(email, senha) {
         super();
+        this.email = email;
+        this.senha = senha;
         this.admin = true;
     }
-}
+};
 
 const User1 = new Usuario('email@teste.com', 'senha123');
-const Adm1 = new Admin('email@teste.com', 'senha123');
+const Admin1 = new Admin('email@teste.com', 'senha123');
 
 console.log(User1.isAdmin());
-console.log(Adm1.isAdmin());
 
-const usuarios = [
-    { nome: 'Alexandre', idade:36, empresa:'DreamMaker' },
-    { nome: 'Rafael', idade:16, empresa:'DreamMaker' },
-    { nome: 'Victoria', idade:11, empresa:'DreamMaker' },
+const usuario = [
+    { nome: 'Diego', idade: 23, empresa: 'Rocketseat' },
+    { nome: 'Gabriel', idade: 15, empresa: 'Rocketseat' },
+    { nome: 'Lucas', idade: 30, empresa: 'Facebook' },
 ]
+
 
 const idade = usuarios.map((item) => item.idade);
 console.log(idade);
