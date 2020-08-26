@@ -1,3 +1,23 @@
+<<<<<<< HEAD
+=======
+class TodoList {
+    constructor() {
+        this.todos = [];
+    }
+
+    addTodo() {
+        this.todos.push('Novo todo');
+        console.log(this.todos);
+    }
+}
+
+const MinhaLista = new TodoList();
+
+document.getElementById('novotodo').onclick = function () {
+    MinhaLista.addTodo(); 
+}
+
+>>>>>>> 4678b155ddce36196ef0bdfc5a6ab80f8a02fda7
 class Usuario {
     constructor(email, senha) {
         this.email = email;
@@ -6,6 +26,7 @@ class Usuario {
     }
 
     isAdmin() {
+<<<<<<< HEAD
         return `${this.admin}`;
     }
 };
@@ -57,3 +78,21 @@ const novoUsuario = usuario.map(function(item) {
 const filtrado = novoUsuario.filter(item => item.idade < 50)
 
 console.log(filtrado);
+=======
+        return this.admin;
+    }
+}
+
+class Admin extends Usuario{
+    constructor(email, senha) {
+        super();
+        this.admin = true;
+    }
+}
+
+const User1 = new Usuario('email@teste.com', 'senha123');
+const Adm1 = new Admin('email@teste.com', 'senha123');
+
+console.log(User1.isAdmin());
+console.log(Adm1.isAdmin());
+>>>>>>> 4678b155ddce36196ef0bdfc5a6ab80f8a02fda7
