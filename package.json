@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "es6",
   "version": "1.0.0",
   "main": "index.js",
@@ -13,20 +12,4 @@
   "scripts": {
     "dev": "babel ./main.js -o ./bundle.js -w"
   }
-=======
-  "dependencies": {
-    "@babel/cli": "^7.10.5",
-    "@babel/core": "^7.11.1",
-    "@babel/preset-env": "^7.11.0"
-  },
-  "scripts": {
-    "dev": "babel  ./main.js -o ./bundle.js -w"
-  },
-  "name": "es6",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/developeralexandresantos/es6.git",
-  "author": "Titio-Lele <gp-alexandresantos@uol.com.br>",
-  "license": "MIT"
->>>>>>> 4678b155ddce36196ef0bdfc5a6ab80f8a02fda7
 }

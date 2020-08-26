@@ -1,8 +1,4 @@
 {
-<<<<<<< HEAD
     "presets": ["@babel/preset-env"],
     "plugins": ["@babel/plugin-proposal-object-rest-spread"]
-=======
-    "presets": ["@babel/preset-env"]
->>>>>>> 4678b155ddce36196ef0bdfc5a6ab80f8a02fda7
 }
