@@ -54,3 +54,16 @@ console.log(trabalhaEMaiorQue18);
 
 const encontraGoogle = usuarios.find((item) => item === 'Google');
 console.log(encontraGoogle);
+
+const multiplicador = usuarios.map(function (item) {
+    const multiplicacao = ({ ...item, idade: item.idade * 2});
+    return multiplicacao;
+})
+
+const idadeMultiplicada = multiplicador.filter((item) => item.idade < 50);
+console.log(idadeMultiplicada);
+
+// 3.1
+const arr = [1, 2, 3, 4, 5];
+
+console.log(arr.map((item) => item + 10));
