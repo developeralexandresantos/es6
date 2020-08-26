@@ -48,29 +48,25 @@ const usuario = [
     { nome: 'Lucas', idade: 30, empresa: 'Facebook' },
 ]
 
-const idades = usuario.map(function (item) {
-    return item.idade;
-});
 
-console.log(idades);
+const idade = usuarios.map((item) => item.idade);
+console.log(idade);
 
-const filter = usuario.filter(function (item) {
-    return item.idade > 18 && item.empresa === 'Rocketseat';
-});
+const trabalhaEMaiorQue18 = usuarios.filter((item) => item.idade > 18 && item.empresa === 'DreamMaker');
+console.log(trabalhaEMaiorQue18);
 
-console.log(filter);
+const encontraGoogle = usuarios.find((item) => item === 'Google');
+console.log(encontraGoogle);
 
-const find = usuario.find(function (item) {
-    return item.empresa === 'Google';
-});
+const multiplicador = usuarios.map(function (item) {
+    const multiplicacao = ({ ...item, idade: item.idade * 2});
+    return multiplicacao;
+})
 
-console.log(find);
+const idadeMultiplicada = multiplicador.filter((item) => item.idade < 50);
+console.log(idadeMultiplicada);
 
-const novoUsuario = usuario.map(function (item) {
-    const teste = ({ ...item, idade: item.idade * 2 });
-    return teste;
-});
+// 3.1
+const arr = [1, 2, 3, 4, 5];
 
-const filtrado = novoUsuario.filter(item => item.idade < 50)
-
-console.log(filtrado);
+console.log(arr.map((item) => item + 10));
